@@ -1,17 +1,18 @@
-// Code Keypad Component Here
+import React from "react";
+import EyesOnMe from "./EyesOnMe";
 
 function handelChange(event){
-    console.log (event.target.value )
+    console.log ("Entering password..." )
 }
 
 function Keypad (){
 
     return (
         <div>
-            <input type="username"/>
-            <input type="password" onChange={handelChange} />
+          <input type="password" onChange={handelChange} />
+          <EyesOnMe/>
         </div>
-    )
-}
-
+      );
+    }
+  
 export default Keypad;
